@@ -1,0 +1,41 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.logo-img {
+  height: 53px;          /* Chiều cao ảnh cố định, vừa với navbar */
+  width: auto;           /* Giữ tỉ lệ gốc của ảnh */
+  object-fit: contain;   /* Đảm bảo ảnh không bị méo */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;   /* Căn giữa theo chiều dọc */
+}
+
+.nav-link.active {
+  color: #c82333 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #c82333;
+}
+
+#content {
+  transition: opacity 0.4s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 576px) {
+  .logo-img {
+    height: 40px; /* Thu nhỏ một chút trên điện thoại */
+  }
+}
