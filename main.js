@@ -79,3 +79,13 @@ window.addEventListener("DOMContentLoaded", () => {
   loadPage("pages/trangchu.html");
 });
 
+// Thu gọn menu sau khi click trên mobile
+document.querySelectorAll('.navbar .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const navbar = document.querySelector('.navbar-collapse');
+    const bsCollapse = bootstrap.Collapse.getInstance(navbar); // Lấy instance hiện tại
+    if (bsCollapse) {
+      bsCollapse.hide(); // Thu gọn menu
+    }
+  });
+});
