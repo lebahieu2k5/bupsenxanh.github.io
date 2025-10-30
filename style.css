@@ -112,5 +112,9 @@ body {
     left: -1.2rem;
   }
 }
-
+section h2 {
+      border-bottom: 2px solid #dc3545;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
 
